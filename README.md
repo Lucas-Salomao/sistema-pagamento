@@ -38,6 +38,9 @@ Para rodar o projeto localmente é necessário executar os containers primeirame
 
 ## Rodar o aplicativo
 ```bash
+#install
+$ npm install
+
 # development
 $ npm run start
 
