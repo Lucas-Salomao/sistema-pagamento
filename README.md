@@ -28,7 +28,7 @@ Para esse cenário, será preciso:
 - sistema de notificação lê mensagem na fila e envia notificação ao usuário sobre a confirmação da transação.
 ## Deploy
 
-Para fazer o deploy desse projeto rode
+Para rodar o projeto localmente é necessário executar os containers primeiramente
 
 ```bash
   cd docker
@@ -36,14 +36,16 @@ Para fazer o deploy desse projeto rode
   docker-compose -f .\docker-rabitMQ.yml up
 ```
 
+## Rodar o aplicativo
 ```bash
-  cd pagamento
-  npm run deploy
-```
+# development
+$ npm run start
 
-```bash
-  cd notificacao
-  npm run deploy
+# watch mode
+$ npm run start:dev
+
+# production mode
+$ mpm run start:prod
 ```
 
 
